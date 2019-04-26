@@ -38,7 +38,6 @@ $(document).ready(function () {
     });
 
     database.ref().on("child_added", function (childSnapshot) {
-        var nextArr;
         var minAway;
         // Chang year so first train comes before now
         var firstTrainNew = moment(childSnapshot.val().firstTrain, "hh:mm").subtract(1, "years");
@@ -68,6 +67,5 @@ $(document).ready(function () {
         $("#email-display").html(snapshot.val().email);
         $("#age-display").html(snapshot.val().age);
         $("#comment-display").html(snapshot.val().comment);
-        console.log("what the hell", name-display)
     });
 });
