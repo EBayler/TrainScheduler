@@ -1,0 +1,47 @@
+body {
+    background-image: url("../images/b3.jpg");
+    background-size: cover;
+}
+panel {
+    width: 100%;
+}
+
+
+#jbt {
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.bg-success {
+    background-color: #ff5a4287!important;
+    ;
+}
+
+.panel-heading {
+    padding-top: 0.25%;
+    color: rgb(242, 220, 124);
+}
+
+.panel-body {
+    color: rgb(242, 220, 124);
+}
+th {
+    color: rgb(242, 220, 124);
+}
+h1, h4 {
+    color: rgb(242, 220, 124);
+}
+.btn-success {
+    color: rgb(242, 220, 124);
+}
+
+.form-control {
+    background-color: #ff5a4287 !important;
+    color: rgb(242, 220, 124)!important;
+}
+
+@media screen and (max-width: 640px) {
+    container {
+        width: 100%;
+    }
+}
