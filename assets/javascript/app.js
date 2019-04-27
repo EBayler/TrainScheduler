@@ -40,7 +40,6 @@ $(document).ready(function () {
     database.ref().on("child_added", function (childSnapshot) {
         var minAway;
         // Chang year so first train comes before now
-        var firstTrainNew = moment(childSnapshot.val().firstTrain, "hh:mm").subtract(1, "years");
         // Difference between the current and firstTrain
         var diffTime = moment().diff(moment(firstTrainNew), "minutes");
         var remainder = diffTime % childSnapshot.val().frequency;
@@ -61,7 +60,7 @@ $(document).ready(function () {
         console.log("Errors handled: " + errorObject.code);
     });
 
-    database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function (snapshot) {
+    database.ref().orderByChild("dateAdded").on("child_added", function (snapshot) {
         // Change the HTML to reflect
         $("#name-display").html(snapshot.val().name);
         $("#email-display").html(snapshot.val().email);
