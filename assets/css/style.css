@@ -1,6 +1,8 @@
 body {
     background-image: url("../images/b3.jpg");
     background-size: cover;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
 }
 panel {
     width: 100%;
@@ -27,9 +29,18 @@ panel {
 }
 th {
     color: rgb(242, 220, 124);
+    font-weight: bolder;
+    font-size: 17px;
 }
 h1, h4 {
     color: rgb(242, 220, 124);
+    font-family: 'Amatic SC', cursive;
+}
+h1 {
+    font-size: 65px;
+}
+h4 {
+    font-size: 84px;
 }
 .btn-success {
     color: rgb(242, 220, 124);
